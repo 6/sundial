@@ -25,12 +25,24 @@ end
 group :development, :test do
   gem 'byebug'
   gem 'spring'
+  gem 'rspec-rails'
+  gem 'rspec-its'
+  gem 'rspec-nc'
+  gem 'factory_girl_rails'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'spring-commands-rspec'
 end
 
 group :development do
   gem 'quiet_assets'
   gem 'better_errors'
   gem 'binding_of_caller'
+end
+
+group :test do
+  gem 'webmock'
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 group :production do

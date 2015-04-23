@@ -1,0 +1,7 @@
+if [ "$1" = "--lint" ] ; then
+  echo "Starting autotest with FactoryGirl.lint enabled"
+  bundle exec guard -g rspec
+else
+  echo "Starting autotest"
+  LINT_DISABLED=true bundle exec guard -g rspec
+fi
