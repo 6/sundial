@@ -16,6 +16,7 @@ gem 'bootstrap-kaminari-views'
 gem 'andand'
 gem 'haml-rails'
 gem 'js-routes'
+gem 'rack-timeout'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
