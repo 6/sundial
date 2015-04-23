@@ -10,6 +10,12 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'unicorn'
+gem 'kaminari'
+gem 'bootstrap-sass'
+gem 'bootstrap-kaminari-views'
+gem 'andand'
+gem 'haml-rails'
+gem 'js-routes'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
@@ -17,8 +23,13 @@ end
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+
+group :development do
+  gem 'quiet_assets'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :production do
