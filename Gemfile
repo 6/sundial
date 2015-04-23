@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'unicorn'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
@@ -18,4 +19,9 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'newrelic_rpm'
 end
